@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 typedef struct BiTree{
-	int data;
+	char data;
 	struct BiTree *lchild,*rchild;
 }BiTree;
-typedef BiTree *SuTree;//¶¨ÒåÊ÷
+typedef BiTree *SuTree;//å®šä¹‰æ ‘
 void ChuangJian(SuTree &s)
 {
 	char ch;
@@ -69,13 +69,13 @@ void Hou(SuTree s)
  {
  	SuTree s;
  	ChuangJian(s);
- 	printf("Ç°Ğò±éÀú£º");
+ 	printf("å‰åºéå†ï¼š");
  	Qian(s);
  	printf("\n");
- 	printf("ÖĞĞò±éÀú: ");
+ 	printf("ä¸­åºéå†: ");
  	Zhong(s);
  	printf("\n");
- 	printf("ºóĞò±éÀú: ");
+ 	printf("ååºéå†: ");
  	Hou(s);
  	
  	
